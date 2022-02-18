@@ -1,0 +1,26 @@
+@startuml
+skinparam sequenceMessageAlign center
+actor Buyer
+
+participant "Fair Trade Coffee" as ftc
+
+actor Seller #Brown
+
+autonumber
+group Setup coffee for sale
+    Seller -> ftc : Upload farm details
+    activate ftc #LightSlateGrey
+    Seller -> ftc : Upload product details
+end
+||20||
+
+group Consumer Interaction with Dapp
+    Buyer -> ftc : Browse site\nfor product
+    activate ftc #Orange
+    Buyer -> ftc : Make purchase\nof product
+end
+
+ftc -> Seller : Tranfer of funds
+ftc -> Buyer : Receives product\non purchase
+||20||
+@enduml

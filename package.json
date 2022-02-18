@@ -1,0 +1,21 @@
+{
+  "name": "supply-chain-dapp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "lite-server",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "frazerdoruado.eth",
+  "license": "MIT",
+  "devDependencies": {
+    "hardhat": "^0.0.7",
+    "lite-server": "2.6.1"
+  },
+  "dependencies": {
+    "truffle-hdwallet-provider": "^1.0.6",
+    "web3": "^1.2.6"
+  }
+}
